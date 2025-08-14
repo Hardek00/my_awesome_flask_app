@@ -13,6 +13,11 @@ def hello():
 def goodbye():
     return f"Goodbye my friend"
 
+@app.route("/hau")
+
+def how_are_you():
+    return f"How are you"
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
