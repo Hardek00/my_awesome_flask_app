@@ -26,5 +26,5 @@ jobs:
          pip install -r requirements.txt
          pip install pytest
 
-       - name: Kör tester
+      - name: Kör tester
         run: pytest
