@@ -6,10 +6,10 @@ target-version = "py311"
 line-length = 88
 
 # Select rule families (E=pycodestyle, F=pyflakes)
-select = ["E", "F"]
+lint.select = ["E", "F"]
 
 # Ignore specific rules (optional)
-ignore = [
+lint.ignore = [
     "E501",  # line too long (Black handles formatting)
 ]
 

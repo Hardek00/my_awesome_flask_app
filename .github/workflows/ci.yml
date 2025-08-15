@@ -3,7 +3,7 @@ name: Lint Python
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: 
 
 jobs:
   lint:
@@ -21,3 +21,11 @@ jobs:
 
       - name: Run Ruff
         run: ruff check .
+
+  # - name: Installera testberoenden
+  #   run: |
+  #     pip install -r requirements.txt
+  #     pip install pytest
+
+  # - name: Kör tester
+  #   run: pytest
