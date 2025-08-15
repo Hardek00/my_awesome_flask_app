@@ -1,0 +1,21 @@
+# ruff.toml
+# Target Python version
+target-version = "py311"
+
+# Match your formatter (e.g. Black’s 88 chars)
+line-length = 88
+
+# Select rule families (E=pycodestyle, F=pyflakes)
+select = ["E", "F"]
+
+# Ignore specific rules (optional)
+ignore = [
+    "E501",  # line too long (Black handles formatting)
+]
+
+# Optional: Exclude dirs
+exclude = [
+    ".venv",
+    "build",
+    "__pycache__",
+]
