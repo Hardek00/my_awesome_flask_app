@@ -23,9 +23,9 @@ jobs:
         run: ruff check .
 
       - name: Installera testberoenden
-         run: 
+        run: 
          pip install -r requirements.txt
          pip install pytest
 
        - name: Kör tester
-         run: pytest
+        run: pytest
