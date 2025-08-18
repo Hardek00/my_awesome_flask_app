@@ -1,22 +1,23 @@
 from flask import Flask
+import os
 
 app =  Flask(__name__)
 
 @app.route("/")
 
 def hello():
-    return "Hello, welcome to my flask_app"
+    return f"Hello, welcome to my flask_app"
 
 @app.route("/bye")
 
 def goodbye():
-    return "Goodbye my friend"
+    return f"Goodbye my friend"
 
 @app.route("/hau")
 
 def how_are_you():
-    return "How are you"
+    return f"How are you"
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5070)

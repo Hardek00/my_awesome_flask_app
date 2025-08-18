@@ -2,13 +2,14 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY requierments.txt .
+COPY req.txt .
 
-RUN pip install -r requierments.txt
+RUN pip install -r req.txt
 
 COPY . .
 
-EXPOSE 5000
+#Endast dokumentation
+EXPOSE 5070
 
 CMD ["python","app.py"]
 
